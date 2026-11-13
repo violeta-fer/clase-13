@@ -1,8 +1,8 @@
             document.addEventListener("DOMContentLoaded", () => {
                 // Datos: única fuente para textos y cuadrículas
                 const datos = {
-                    universidades: { total: 1504, origen: 186, destino: 133 },
-                    escuelas: { total: 303, origen: 155, destino: 98 },
+                    universidades: { total: 1504, origen: 186, destino: 87 },
+                    escuelas: { total: 303, origen: 155, destino: 7 },
                 };
 
                 document.querySelectorAll("[data-dato]").forEach((el) => {
