@@ -573,16 +573,16 @@
                 radar("comparaEscuelas");
 
                 // Mapa
-                const map = L.map("map").setView([45.478031°, 9.227319°], 3);
+                const map = L.map("map").setView([45.478031, 9.227319], 3);
 
                 L.tileLayer(
                     "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}",
                     { maxZoom: 16, attribution: "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ" }
                 ).addTo(map);
 
-                L.marker([45.478031°, 9.227319°])
+                L.marker([45.478031, 9.227319])
                     .addTo(map)
-                    .bindPopup("<b>Universidad de Chile</b><br />Facultad de Arquitectura y Urbanismo.")
+                    .bindPopup("<b>Politecnico de Milán</b><br />Scuola di Design.")
                     .openPopup();
             });
         </script>
