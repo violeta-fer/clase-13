@@ -1,4 +1,4 @@
-            :root {
+:root {
                 --color-bg: #eaeaea;
                 --color-accent: slategray;
                 --color-text: rgb(60, 60, 60);
@@ -230,8 +230,8 @@
             }
 
             .grafico {
-                max-width: 500px;
-                margin: 2.5rem auto;
+                width: calc(100% + 4vw);
+                margin: 2.5rem -2vw;
             }
 
             #map {
