@@ -167,17 +167,18 @@
             }
 
             figure img {
-                display: block;
-                width: 100%;
-                height: auto;
-            }
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
 
             figcaption {
-                margin-top: 0.4rem;
-                font-size: 0.8rem;
-                color: #666;
-                text-indent: 2vw;
-            }
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+    color: #666;
+    text-align: right;
+}
 
             @media (orientation: portrait) {
                 figure {
