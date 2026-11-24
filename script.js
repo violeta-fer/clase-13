@@ -124,14 +124,14 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     // Mapa
-    const map = L.map("map").setView([45.478031, 9.227319], 3);
+    const map = L.map("map").setView([45.5023, 9.1566], 6);
 
     L.tileLayer(
         "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}",
         { maxZoom: 16, attribution: "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ" }
     ).addTo(map);
 
-    L.marker([45.478031, 9.227319])
+    L.marker([45.5023, 9.1566])
         .addTo(map)
         .bindPopup("<b>Politecnico de Milán</b><br />Scuola di Design.")
         .openPopup();
