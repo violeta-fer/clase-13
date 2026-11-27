@@ -102,12 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const chile = { ac: 52.5, acPos: 186, em: 78.5, emPos: 37 };
     const polimi = { ac: 82.8, acPos: 10, em: 87.4, emPos: 13 };
 
-    const valores = (e) => [
-        e.ac,
-        invertir(e.acPos, MAX_RANK_ACADEMICO),
-        e.em,
-        invertir(e.emPos, MAX_RANK_EMPLEADORES),
-    ];
+    const valores = (e) => [e.ac, invertir(e.acPos, MAX_RANK_ACADEMICO), e.em, invertir(e.emPos, MAX_RANK_EMPLEADORES)];
     const textos = (e) => [`${e.ac} puntos`, `lugar ${e.acPos}`, `${e.em} puntos`, `lugar ${e.emPos}`];
 
     radar(
@@ -131,8 +126,5 @@ document.addEventListener("DOMContentLoaded", () => {
         { maxZoom: 16, attribution: "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ" }
     ).addTo(map);
 
-    L.marker([45.5023, 9.1566])
-        .addTo(map)
-        .bindPopup("<b>Politecnico de Milán</b><br />Scuola di Design.")
-        .openPopup();
+    L.marker([45.5023, 9.1566]).addTo(map).bindPopup("<b>Politecnico de Milán</b><br />Scuola di Design.").openPopup();
 });
